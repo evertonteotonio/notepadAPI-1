@@ -22,6 +22,5 @@ class NotaController{
     @PostMapping
     fun salvar(@RequestBody nota: Nota){
         notaService.salvar(nota)
-        return notaService.buscar(nota.titulo)
     }
 }
